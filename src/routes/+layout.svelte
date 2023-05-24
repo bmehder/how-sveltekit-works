@@ -20,7 +20,7 @@
   }
   main {
     width: 100%;
-    max-width: 64em;
+    max-width: var(--max-width);
     padding-block: 6em;
     padding-inline: 3em;
     margin-inline: auto;

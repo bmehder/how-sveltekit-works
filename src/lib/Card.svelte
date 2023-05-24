@@ -23,7 +23,7 @@
 		padding: 1.5em;
 	}
 
-	.content div :global(p + p) {
+	.content div :global(* + *) {
     margin-block-start: 1.5rem;
   }
 </style>
