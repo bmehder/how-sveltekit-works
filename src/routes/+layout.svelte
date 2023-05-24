@@ -1,11 +1,13 @@
 <script>
   import '$lib/app.css'
   import Header from '$lib/Header.svelte'
+  import Header2 from '$lib/Header2.svelte'
   import Footer from '$lib/Footer.svelte'
+  import BackToTop from '../lib/BackToTop.svelte'
 </script>
 
 <div class="wrapper">
-  <Header logo="SvelteKit Demo" />
+  <Header2 logo="SvelteKit Demo" />
 
   <main class="flow">
     <slot />
@@ -13,6 +15,8 @@
   
   <Footer text="Anna Pollard." />
 </div>
+
+<BackToTop color="dodgerblue" />
 
 <style>
   .wrapper {
