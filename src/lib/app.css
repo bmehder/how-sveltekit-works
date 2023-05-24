@@ -63,9 +63,10 @@ a {
 .inner {
   max-width: var(--max-width);
   margin-inline: auto;
-	padding-block: 3em;	
-  padding-inline: 3em;
+	padding-block: calc(var(--size) * 2);	
+  padding-inline: calc(var(--size) * 2);
 }
+
 .auto-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));

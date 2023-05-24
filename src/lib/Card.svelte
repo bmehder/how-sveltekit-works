@@ -20,11 +20,11 @@
 
 <style>		
 	.content {
-		padding: 1.5em;
+		padding: var(--size);
 	}
 
 	.content div :global(* + *) {
-    margin-block-start: 1.5rem;
+    margin-block-start: var(--size);
   }
 </style>
 

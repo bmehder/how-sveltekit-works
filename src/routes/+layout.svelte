@@ -6,9 +6,11 @@
 
 <div class="wrapper">
   <Header logo="SvelteKit Demo" />
+
   <main class="flow">
     <slot />
   </main>
+  
   <Footer text="Anna Pollard." />
 </div>
 
@@ -21,8 +23,8 @@
   main {
     width: 100%;
     max-width: var(--max-width);
-    padding-block: 6em;
-    padding-inline: 3em;
+    padding-block: calc(var(--size) * 4);
+    padding-inline: calc(var(--size) * 2);
     margin-inline: auto;
     line-height: 1.5;
   }

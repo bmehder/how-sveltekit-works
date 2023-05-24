@@ -1,5 +1,6 @@
 <script>
   import Card from '$lib/Card.svelte'
+  
   export let data
 </script>
 
@@ -7,6 +8,6 @@
 
 <ul class="auto-grid">
   {#each data.posts.posts as post}
-    <Card {post} buttonText="More"/>
+    <Card {post} buttonText="Read More"/>
   {/each}
 </ul>
