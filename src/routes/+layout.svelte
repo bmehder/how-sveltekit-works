@@ -6,7 +6,7 @@
 
 <div class="wrapper">
   <Header logo="SvelteKit Demo" />
-  <main>
+  <main class="flow">
     <slot />
   </main>
   <Footer text="Anna Pollard." />
@@ -24,5 +24,6 @@
     padding-block: 6em;
     padding-inline: 3em;
     margin-inline: auto;
+    line-height: 1.5;
   }
 </style>
