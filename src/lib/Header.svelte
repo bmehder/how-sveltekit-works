@@ -19,8 +19,11 @@
 </header>
 
 <style>
+	header {
+		overflow: auto;
+	}
+
 	div {
-		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
