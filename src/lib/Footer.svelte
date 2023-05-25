@@ -1,4 +1,5 @@
 <script>
+	// Component prop
 	export let text = ''
 	
 	const year = new Date().getFullYear()

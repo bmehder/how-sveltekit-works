@@ -1,4 +1,5 @@
 <script>
+	// Component prop
 	export let logo = 'Add Logo Prop!'
 </script>
 

@@ -1,3 +1,5 @@
+<!-- This is the layout file that is inherited by all the pages on all routes. -->
+
 <script>
   import '$lib/app.css'
   import Header from '$lib/Header.svelte'

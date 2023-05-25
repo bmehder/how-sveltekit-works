@@ -1,12 +1,16 @@
 <script>
+  // Svelte's built-in fade transition (function)
   import { fade } from 'svelte/transition'
 
+  // Component Props (w/ default values)
   export let color = 'black'
   export let icon = '&#8593;'
   export let threshold = 1000
 
+  // On click event handler (function)
   const scrollToTop = () => window.scrollTo(0, 0)
 
+  // Component State
   let scrollY
 </script>
 

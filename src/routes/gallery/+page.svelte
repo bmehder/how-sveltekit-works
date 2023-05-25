@@ -1,6 +1,7 @@
 <script>
   import Card from '$lib/Card.svelte'
   
+  // The data returned from this file's sibling "+page.js" file
   export let data
 </script>
 

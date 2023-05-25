@@ -1,7 +1,9 @@
 <script>
+	// Component props
 	export let post
 	export let buttonText = "Something"
 	
+	// Object destructuring
 	const { featured_image, title, excerpt } = post
 </script>
 
