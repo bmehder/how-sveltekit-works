@@ -6,13 +6,13 @@
 </script>
 
 <div class="wrapper">
-  <Header logo="SvelteKit Demo" />
+  <!-- <Header logo="SvelteKit Demo" /> -->
 
   <main class="flow">
     <slot />
   </main>
   
-  <Footer text="Anna Pollard." />
+  <!-- <Footer text="Anna Pollard." /> -->
 </div>
 
 <BackToTop color="dodgerblue" />
