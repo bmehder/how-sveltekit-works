@@ -6,7 +6,7 @@
 </script>
 
 <div class="wrapper">
-  <!-- <Header logo="SvelteKit Demo" /> -->
+  <Header logo="SvelteKit Demo" />
 
   <main class="flow">
     <slot />
