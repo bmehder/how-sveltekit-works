@@ -1,11 +1,11 @@
 <script>
   import { fade } from 'svelte/transition'
 
-  const scrollToTop = () => window.scrollTo(0, 0)
-
   export let color = 'black'
   export let icon = '&#8593;'
   export let threshold = 1000
+
+  const scrollToTop = () => window.scrollTo(0, 0)
 
   let scrollY
 </script>
