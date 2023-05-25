@@ -68,7 +68,7 @@ button, .button {
   max-width: var(--max-width);
   margin-inline: auto;
 	padding-block: calc(var(--size) * 2);	
-  padding-inline: calc(var(--size) * 2);
+  padding-inline: calc(var(--size) * 3);
 }
 
 .auto-grid {
