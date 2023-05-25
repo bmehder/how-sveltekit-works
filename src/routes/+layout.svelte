@@ -12,7 +12,7 @@
     <slot />
   </main>
   
-  <!-- <Footer text="Anna Pollard." /> -->
+  <Footer text="Anna Pollard." />
 </div>
 
 <BackToTop color="dodgerblue" />
