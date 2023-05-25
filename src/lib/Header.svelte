@@ -19,14 +19,11 @@
 </header>
 
 <style>
-	header {
-		overflow: auto;
-	}
-
 	div {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-wrap: wrap;
 		gap: var(--size);
 	}
 	
