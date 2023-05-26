@@ -2,17 +2,27 @@
 <script>
   import '$lib/app.css'
   import Header from '$lib/Header.svelte'
+  import MobileHeader from '$lib/MobileHeader.svelte'
   import Footer from '$lib/Footer.svelte'
   import BackToTop from '$lib/BackToTop.svelte'
+
+  // Component State
+  let innerWidth
 </script>
 
+<svelte:window bind:innerWidth />
+
 <div class="wrapper">
-  <Header logo="SvelteKit Demo" />
+  {#if innerWidth > 767}
+    <Header logo="Sveltekit Demo" />
+  {:else}
+    <MobileHeader logo="SvelteKit" />
+  {/if}
 
   <main class="flow">
     <slot />
   </main>
-  
+
   <Footer text="Anna Pollard." />
 </div>
 
