@@ -14,7 +14,7 @@
 
 <div class="wrapper">
   {#if innerWidth > 767}
-    <Header logo="Sveltekit Demo" />
+    <Header logo="SvelteKit Demo" />
   {:else}
     <MobileHeader logo="SvelteKit" />
   {/if}

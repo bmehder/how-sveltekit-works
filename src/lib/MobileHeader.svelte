@@ -1,4 +1,5 @@
 <script>
+  import menuItem from '$lib/menuItems'
   import { slide } from 'svelte/transition'
   import Hamburger from './Hamburger.svelte'
   import Close from './Close.svelte'
@@ -30,10 +31,9 @@
     {#if isOpen}
       <nav transition:slide>
         <ul>
-          <li><a on:click={closeMenu} href="/">Home</a></li>
-          <li><a on:click={closeMenu} href="/about">About</a></li>
-          <li><a on:click={closeMenu} href="/gallery">Gallery</a></li>
-          <li><a on:click={closeMenu} href="/contact">Contact</a></li>
+          {#each menuItem as { name, url }}
+            <li><a on:click={closeMenu} href={url}>{name}</a></li>
+          {/each}
         </ul>
       </nav>
     {/if}
@@ -41,13 +41,6 @@
 </header>
 
 <style>
-  div {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--size);
-  }
-
   .top {
     display: flex;
     justify-content: space-between;
