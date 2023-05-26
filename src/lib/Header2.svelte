@@ -1,5 +1,6 @@
 <script>
   import Hamburger from './Hamburger.svelte'
+  import Close from './Close.svelte'
 
 	// Component prop
 	export let logo = 'Add Logo Prop!'
@@ -22,7 +23,11 @@
 			<a href="/">{@html logo}</a>
 		</div>
 		<span on:click={toggleMenu} on:keydown>
-			<Hamburger />
+			{#if isOpen}
+				<Close />
+			{:else}
+				<Hamburger />
+			{/if}
 		</span>
 		<nav>
 			<ul class:isOpen>

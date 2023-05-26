@@ -5,4 +5,4 @@
   />
 </svelte:head>
 
-<i class="fa-solid fa-2x fa-bars"></i>
+<i class="fa-solid fa-2x fa-xmark"></i>
