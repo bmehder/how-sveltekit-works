@@ -36,7 +36,7 @@
 
   ul {
     display: flex;
-    gap: var(--size);
+    gap: calc(var(--size) * 1.5);
     list-style: none;
   }
 </style>

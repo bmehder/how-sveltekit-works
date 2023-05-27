@@ -1,6 +1,6 @@
 <script>
-  import menuItem from '$lib/menuItems'
   import { slide } from 'svelte/transition'
+  import menuItem from '$lib/menuItems'
   import Hamburger from './Hamburger.svelte'
   import Close from './Close.svelte'
 
@@ -18,7 +18,7 @@
   <div class="inner">
     <div class="top">
       <div class="logo">
-        <a href="/">{@html logo}</a>
+        <a on:click={closeMenu} href="/">{@html logo}</a>
       </div>
       <div class="trigger" on:click={toggleMenu} on:keypress>
         {#if isOpen}
@@ -44,6 +44,7 @@
   .top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .logo {

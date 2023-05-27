@@ -8,6 +8,7 @@
 
   // Component State
   let innerWidth
+  
 </script>
 
 <svelte:window bind:innerWidth />
