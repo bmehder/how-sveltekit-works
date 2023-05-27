@@ -1,23 +1,25 @@
 <!-- This is the layout file that is used by all the routes. -->
 <script>
   import '$lib/app.css'
-  import Header from '$lib/Header.svelte'
-  import MobileHeader from '$lib/MobileHeader.svelte'
+  import menuItems from '$lib/Header/menuItems'
+  import Header from '$lib/Header/Header.svelte'
+  import MobileHeader from '$lib/Header/MobileHeader.svelte'
   import Footer from '$lib/Footer.svelte'
   import BackToTop from '$lib/BackToTop.svelte'
 
+  const mobileThreshold = 767
+
   // Component State
-  let innerWidth
-  
+  let innerWidth  
 </script>
 
 <svelte:window bind:innerWidth />
 
 <div class="wrapper">
-  {#if innerWidth > 767}
-    <Header logo="SvelteKit Demo" />
+  {#if innerWidth > mobileThreshold}
+    <Header logo="SvelteKit Demo" {menuItems} />
   {:else}
-    <MobileHeader logo="SvelteKit" />
+    <MobileHeader logo="SvelteKit" {menuItems} />
   {/if}
 
   <main class="flow">

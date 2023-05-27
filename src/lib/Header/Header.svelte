@@ -1,8 +1,7 @@
 <script>
-  import menuItem from '$lib/menuItems'
-	
-  // Component prop
+  // Component props
   export let logo = 'Add Logo Prop!'
+  export let menuItems
 </script>
 
 <header class="bg-accent">
@@ -12,7 +11,7 @@
     </div>
     <nav>
       <ul>
-        {#each menuItem as { name, url }}
+        {#each menuItems as { name, url }}
           <li><a href={url}>{name}</a></li>
         {/each}
       </ul>
@@ -36,7 +35,9 @@
 
   ul {
     display: flex;
-    gap: calc(var(--size) * 1.5);
+    gap: var(--size);
     list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 </style>

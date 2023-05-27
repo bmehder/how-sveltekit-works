@@ -1,11 +1,18 @@
+<svelte:head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</svelte:head>
+
 <script>
   import { slide } from 'svelte/transition'
-  import menuItem from '$lib/menuItems'
-  import Hamburger from './Hamburger.svelte'
-  import Close from './Close.svelte'
+  import Hamburger from '$lib/icons/Hamburger.svelte'
+  import Close from '$lib/icons/Close.svelte'
 
   // Component prop
   export let logo = 'Add Logo Prop!'
+  export let menuItems
 
   // Component State
   let isOpen = false
@@ -31,7 +38,7 @@
     {#if isOpen}
       <nav transition:slide>
         <ul>
-          {#each menuItem as { name, url }}
+          {#each menuItems as { name, url }}
             <li><a on:click={closeMenu} href={url}>{name}</a></li>
           {/each}
         </ul>
@@ -57,8 +64,13 @@
     display: flex;
     flex-direction: column;
     gap: var(--size);
-    padding-block-start: var(--size);
+    padding-block-start: calc(var(--size) * 2);
     font-size: var(--size);
     list-style: none;
+  }
+
+  li {
+    padding-bottom: calc(var(--size));
+    border-bottom: 4px solid var(--light);
   }
 </style>

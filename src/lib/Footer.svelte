@@ -9,23 +9,37 @@
 
 <footer class="bg-dark">
   <div class="inner">
-    <p>© Copyright {year} {text} All rights reserved.</p>
     <div>
       <Colors />
     </div>
+    <p>© Copyright {year} {text} All rights reserved.</p>
   </div>
 </footer>
 
 <style>
   .inner {
     display: flex;
-		flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    gap: var(--size);
+    gap: calc(var(--size) * 2);
   }
   .inner > * {
-    flex: 1;
-    margin-inline: auto;
+    text-align: center;
+  }
+  @media (min-width: 48.1em) {
+    .inner {
+      flex-direction: row;
+      align-items: center;
+    }
+    .inner > * {
+      flex: 1;
+      text-align: initial;
+    }
+    .inner div {
+      order: 2;
+    }
+    .inner p {
+      order: 1;
+    }
   }
 </style>
