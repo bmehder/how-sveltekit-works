@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte'
 
+  // Component State
   let document
   let accent = '#ff6347'
   let darker = '#161616'
@@ -46,7 +47,7 @@
     background-color: #161616;
     color: white;
     border-radius: 1rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.32);
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.32);
     opacity: 0.8;
   }
   div {

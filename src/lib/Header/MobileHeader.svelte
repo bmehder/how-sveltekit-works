@@ -71,6 +71,10 @@
 
   li {
     padding-bottom: calc(var(--size));
-    border-bottom: 4px solid var(--light);
+    border-bottom: 2px solid var(--light);
+  }
+
+  a {
+    display: block;
   }
 </style>

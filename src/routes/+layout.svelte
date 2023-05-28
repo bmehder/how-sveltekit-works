@@ -7,10 +7,10 @@
   import Footer from '$lib/Footer.svelte'
   import BackToTop from '$lib/BackToTop.svelte'
 
-  const mobileThreshold = 767
+  const mobileThreshold = 768
 
   // Component State
-  let innerWidth  
+  let innerWidth
 </script>
 
 <svelte:window bind:innerWidth />

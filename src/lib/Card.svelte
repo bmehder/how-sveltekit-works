@@ -4,19 +4,19 @@
 	export let buttonText = "Something"
 	
 	// Object destructuring
-	const { featured_image, title, excerpt } = post
+	const { featured_image, title, excerpt, slug } = post
 </script>
 
 <li class="bg-light">
-	<a href="/gallery/{post.slug}">
+	<a href="/gallery/{slug}">
 		<img class="square" src="{featured_image}" alt="placeholder">
 	</a>
 	<div class="content flow">
 		<h2>
-			<a href="/gallery/{post.slug}">{@html title}</a>
+			<a href="/gallery/{slug}">{@html title}</a>
 		</h2>
 		<div>{@html excerpt}</div>
-		<a class="button" href="/gallery/{post.slug}">{buttonText}</a>
+		<a class="button" href="/gallery/{slug}">{buttonText}</a>
 	</div>
 </li>
 
