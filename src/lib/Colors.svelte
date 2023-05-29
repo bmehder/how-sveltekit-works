@@ -1,41 +1,20 @@
 <script>
-  import { onMount } from 'svelte'
+  import { browser } from '$app/environment';
 
-  // Component State
-  let document
-  let accent = '#ff6347'
-  let darker = '#161616'
-  let dark = '#323232'
-  let light = '#ffffff'
+  export let colors = {}
 
-  $: document?.body?.style.setProperty('--accent', accent)
-  $: document?.body?.style.setProperty('--darker', darker)
-  $: document?.body?.style.setProperty('--dark', dark)
-  $: document?.body?.style.setProperty('--light', light)
+  const setBodyCustomProperties = ([key, val]) => document.body.style.setProperty(key, val)
 
-  onMount(() => (document = window.document))
+  $: browser && Object.entries(colors).forEach(setBodyCustomProperties)
 </script>
 
 <aside>
-  <div>
-    <label for="accent">Accent</label>
-    <input type="color" name="accent" bind:value={accent} />
-  </div>
-
-  <div>
-    <label for="body">Body</label>
-    <input type="color" name="body" bind:value={darker} />
-  </div>
-
-  <div>
-    <label for="text">Text</label>
-    <input type="color" name="text" bind:value={light} />
-  </div>
-
-  <div>
-    <label for="footer">Footer</label>
-    <input type="color" name="footer" bind:value={dark} />
-  </div>
+  {#each Object.entries(colors) as [key]}
+    <div>
+      <label for="{key}">{key.replace('--', '')}</label>
+      <input type="color" name="{key}" bind:value={colors[key]} />
+    </div>
+  {/each}
 </aside>
 
 <style>
@@ -47,7 +26,7 @@
     background-color: #161616;
     color: white;
     border-radius: 1rem;
-    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.32);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.32);
     opacity: 0.8;
   }
   div {
@@ -55,6 +34,9 @@
     flex-direction: column;
     align-items: center;
     gap: calc(var(--size) / 4);
+  }
+  label {
+    text-transform: capitalize;
   }
   input {
     cursor: pointer;

@@ -1,6 +1,13 @@
 <script>
   import Colors from './Colors.svelte'
 
+  const colors = {
+    '--accent': '#ff6347',
+    '--darker': '#161616',
+    '--dark': '#323232',
+    '--light': '#ffffff',
+  }
+
   // Component prop
   export let text = ''
 
@@ -10,7 +17,7 @@
 <footer class="bg-dark">
   <div class="inner">
     <div>
-      <Colors />
+      <Colors {colors} />
     </div>
     <p>© Copyright {year} {text} All rights reserved.</p>
   </div>
