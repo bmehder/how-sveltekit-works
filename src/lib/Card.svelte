@@ -20,7 +20,11 @@
 	</div>
 </li>
 
-<style>		
+<style>
+	li {
+		list-style: none;
+	}
+	
 	.content {
 		padding: var(--size);
 	}
