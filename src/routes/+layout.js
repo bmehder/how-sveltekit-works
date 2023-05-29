@@ -1,4 +1,4 @@
-// Prerender the Gallery page - means make the page on the server at build time.
+// Prerender the Gallery page - means do the fetch request on the server at build time.
 export const prerender = true
 
 // The SvelteKit "Load function" using a custom fetch() that works on the server
