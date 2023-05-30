@@ -70,7 +70,7 @@
   }
 
   li {
-    padding-bottom: calc(var(--size));
+    padding-block-end: calc(var(--size));
     border-bottom: 2px solid var(--light);
   }
 

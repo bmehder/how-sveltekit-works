@@ -8,7 +8,6 @@
     '--light': '#ffffff',
   }
 
-  // Component prop
   export let text = ''
 
   const year = new Date().getFullYear()
@@ -27,25 +26,22 @@
   .inner {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: calc(var(--size) * 2);
-  }
-  .inner > * {
+    gap: calc(var(--size) * 1.5);
     text-align: center;
   }
-  @media (min-width: 48.1em) {
+  .inner > * {
+    flex: 1;
+  }
+  @media (min-width: 48em) {
     .inner {
       flex-direction: row;
       align-items: center;
-    }
-    .inner > * {
-      flex: 1;
       text-align: initial;
     }
-    .inner div {
+    .inner :first-child {
       order: 2;
     }
-    .inner p {
+    .inner :last-child {
       order: 1;
     }
   }

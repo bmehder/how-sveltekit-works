@@ -39,6 +39,8 @@
 
   input, textarea {
     padding: calc(var(--size) / 2);
+    font-family: inherit;
+    font-size: inherit;
   }
 
   input[type="submit"] {

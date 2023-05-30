@@ -3,9 +3,9 @@
 
   export let colors = {}
 
-  const setBodyCustomProperties = ([key, val]) => document.body.style.setProperty(key, val)
+  const setCustomPropertyOnBody = ([key, val]) => document.body.style.setProperty(key, val)
 
-  $: browser && Object.entries(colors).forEach(setBodyCustomProperties)
+  $: browser && Object.entries(colors).forEach(setCustomPropertyOnBody)
 </script>
 
 <aside>
@@ -26,7 +26,7 @@
     background-color: #161616;
     color: white;
     border-radius: 1rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.32);
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.32);
     opacity: 0.8;
   }
   div {

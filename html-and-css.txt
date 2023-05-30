@@ -1,0 +1,83 @@
+Text Elements
+
+  <h1></h1>
+  <h2></h2>
+  <p></p>
+  <ul></ul>
+  <li></li>
+
+Image and Links
+  
+  <img />
+  <a></a>
+
+Generic Elements
+  
+  <div></div>
+  <span></span>
+
+Semantic Elements
+
+  <header></header>
+  <nav></nav>
+  <main></main>
+  <aside></aside>
+  <footer></footer>
+
+Form Elements
+
+  <form></form>
+  <label></label>
+  <input />
+  <textarea></textarea>
+
+CSS Properties
+
+  box-sizing
+  width
+  min-width
+  min-height
+  margin
+  margin-inline
+  margin-block
+  margin-block-start
+  padding
+  padding-block
+  padding-block-start
+  padding-block-end
+  padding-inline
+  background-color
+  color
+  display
+  flex
+  flex-wrap
+  flex-direction
+  justify-content
+  align-items
+  order
+  gap
+  grid-template-columns
+  grid-template-rows
+  place-content
+  position
+  right
+  bottom
+  aspect-ratio
+  object-fit
+  outline
+  text-decoration
+  text-transform
+  text-align
+  letter-spacing
+  font-weight
+  font-size
+  font-family
+  line-height
+  list-style
+  border
+  border-radius
+  box-shadow
+  transition
+  scale
+  opacity
+  cursor
