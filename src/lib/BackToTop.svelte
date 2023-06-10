@@ -23,7 +23,7 @@
     on:click={scrollToTop}
     on:keydown
   >
-    <span>{@html icon}</span>
+    {@html icon}
   </div>
 {/if}
 

@@ -6,6 +6,7 @@
   import MobileHeader from '$lib/Header/MobileHeader.svelte'
   import Footer from '$lib/Footer.svelte'
   import BackToTop from '$lib/BackToTop.svelte'
+  import Popover from '$lib/Popover.svelte'
 
   const mobileThreshold = 768
 
@@ -30,6 +31,8 @@
 </div>
 
 <BackToTop color="dodgerblue" />
+
+<Popover delay="2000" />
 
 <style>
   .wrapper {

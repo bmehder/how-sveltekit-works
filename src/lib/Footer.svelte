@@ -2,10 +2,10 @@
   import Colors from './Colors.svelte'
 
   const colors = {
-    '--accent': '#ff6347',
+    '--accent': '#ff6347', // tomato
     '--darker': '#161616',
     '--dark': '#323232',
-    '--light': '#ffffff',
+    '--light': '#ffffff', // white
   }
 
   export let text = ''

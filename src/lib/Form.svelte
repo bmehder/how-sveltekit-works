@@ -6,19 +6,19 @@
 <form action="https://formspree.io/f/{apiKey}" method="POST">
   <div>
     <label for="first-name">First Name</label>
-    <input type="text" name="first-name" required/>
+    <input type="text" id="first-name" name="first-name" required/>
   </div>
   <div>
     <label for="last-name">Last Name</label>
-    <input type="text" name="last-name" required/>
+    <input type="text" id="last-name" name="last-name" required/>
   </div>
   <div>
     <label for="email">Email</label>
-    <input type="email" name="email" required/>
+    <input type="email" id="email" name="email" required/>
   </div>
   <div>
     <label for="message">Message</label>
-    <textarea name="message" cols="30" rows="10" required></textarea>
+    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
   </div>
   <div>
     <input class="bg-accent" type="submit" value="Submit Message" />

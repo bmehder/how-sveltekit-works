@@ -14,7 +14,7 @@ Image and Links
 Generic Elements
   
   <div></div>
-  <span></span>
+  <br />
 
 Semantic Elements
 
@@ -64,7 +64,6 @@ CSS Properties
   bottom
   aspect-ratio
   object-fit
-  outline
   text-decoration
   text-transform
   text-align
@@ -76,6 +75,7 @@ CSS Properties
   list-style
   border
   border-radius
+  outline
   box-shadow
   transition
   scale
