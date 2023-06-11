@@ -2,27 +2,29 @@
   export let delay = 0
 
   const openModal = (elem, ms) => setTimeout(() => elem.showPopover(), ms)
+  const hideModal = evt => evt.target.parentElement.hidePopover()
 </script> 
  
-<div id="modal" use:openModal="{delay}" popover>
-	<p>I am a Modal!</p>
+<div use:openModal="{delay}" popover>
+	<slot>Fallback content</slot>
+	<button on:click={hideModal}>Close</button>
 </div>
 
 <style>
-	#modal:popover-open {
-    width: 32%;
-    min-width: 16em;
-    aspect-ratio: 1;
+	div:popover-open {
+		width: clamp(16em, 32em, 80%);
 		display: grid;
-		place-items: center;
-		gap: 1rem;
+		place-content: center;
+		gap: 1.5rem;
 		margin: auto;
-    padding: var(--size);
+    padding: calc(var(--size) * 2);
+		line-height: 1.5;
     border-radius: 0.5rem;
-		animation: slideDown 600ms;
+		animation-delay: 400ms;
+		animation: slideDown 400ms;
 	}
 	
-	#modal::backdrop {
+	div::backdrop {
 		background-color: black;
 		opacity: 0.8;
 		animation: fade 200ms;
@@ -39,11 +41,9 @@
 	
 	@keyframes slideDown { 
 		0% {
-			width: 0%;
 			transform: translateY(-500%);
 		}
 		100% {
-			width: 32%;
 			transform: translateY(0%);
 		} 
 	}
