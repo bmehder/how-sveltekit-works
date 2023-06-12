@@ -1,10 +1,11 @@
 <!-- This is the layout file that is used by all the routes. -->
 <script>
-  import { page } from '$app/stores';
   import '$lib/app.css'
+  import { page } from '$app/stores'
   import menuItems from '$lib/Header/menuItems'
   import Header from '$lib/Header/Header.svelte'
   import MobileHeader from '$lib/Header/MobileHeader.svelte'
+  import Hero from '$lib/Hero.svelte'
   import Footer from '$lib/Footer.svelte'
   import BackToTop from '$lib/BackToTop.svelte'
   import Popover from '$lib/Popover.svelte'
@@ -25,7 +26,10 @@
   {/if}
 
   {#if $page.route.id === '/'}
-    <img src="https://picsum.photos/1200/600" alt="placeholder">
+    <Hero image="https://picsum.photos/1200/600">
+      <h2>Welcome to my website!</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </Hero>
   {/if}
 
   <main class="flow">
@@ -39,7 +43,13 @@
 
 <Popover delay="2000">
   <h2>My content</h2>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nam dignissimos asperiores, neque eaque sequi pariatur ex blanditiis accusantium iusto eveniet dolor nihil molestias autem soluta dicta doloribus eius voluptates officia rerum placeat mollitia deleniti ab facilis? Quam mollitia exercitationem officia, perspiciatis nihil iste fugiat eum tenetur nemo debitis magni.</p>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nam dignissimos
+    asperiores, neque eaque sequi pariatur ex blanditiis accusantium iusto eveniet dolor
+    nihil molestias autem soluta dicta doloribus eius voluptates officia rerum placeat
+    mollitia deleniti ab facilis? Quam mollitia exercitationem officia, perspiciatis nihil
+    iste fugiat eum tenetur nemo debitis magni.
+  </p>
 </Popover>
 
 <style>

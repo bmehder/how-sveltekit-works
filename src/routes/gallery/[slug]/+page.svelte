@@ -1,11 +1,11 @@
 <script>
   export let data
-  
-  console.log(data)
+
+  const { title, featured_image, excerpt } = data.post
 </script>
 
-<h1>{data.post.title}</h1>
+<h1>{title}</h1>
 
-<img src="{data.post.featured_image}" alt="{data.post.title}">
+<img src={featured_image} alt={title} />
 
-<div>{@html data.post.excerpt}</div>
+<div>{@html excerpt}</div>
