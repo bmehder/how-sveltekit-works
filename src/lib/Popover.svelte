@@ -2,10 +2,11 @@
   export let delay = 0
 
   const openModal = (elem, ms) => setTimeout(() => elem.showPopover(), ms)
+
   const hideModal = evt => evt.target.parentElement.hidePopover()
 </script> 
  
-<div use:openModal="{delay}" popover>
+<div class="flow" use:openModal="{delay}" popover>
 	<slot>Fallback content</slot>
 	<button on:click={hideModal}>Close</button>
 </div>
@@ -14,12 +15,10 @@
 	div:popover-open {
 		width: clamp(16em, 32em, 80%);
 		display: grid;
-		place-content: center;
-		gap: 1.5rem;
 		margin: auto;
     padding: calc(var(--size) * 2);
 		line-height: 1.5;
-    border-radius: 0.5rem;
+    border-radius: calc(var(--size) / 3);
 		animation-delay: 400ms;
 		animation: slideDown 400ms;
 	}

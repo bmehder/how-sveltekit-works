@@ -46,7 +46,8 @@
   main {
     width: 100%;
     max-width: var(--max-width);
-    padding: calc(var(--size) * 3);
+    padding-block: calc(var(--size) * 2);
+    padding-inline: calc(var(--size) * 3);
     margin-inline: auto;
     line-height: 1.5;
   }

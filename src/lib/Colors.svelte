@@ -8,7 +8,7 @@
   $: browser && Object.entries(colors).forEach(setCustomPropertyOnBody)
 </script>
 
-<aside>
+<aside class="auto-grid">
   {#each Object.entries(colors) as [key]}
     <div>
       <label for="{key}">{key.replace('--', '')}</label>
@@ -19,8 +19,7 @@
 
 <style>
   aside {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+    --min: 3em;
     gap: var(--size);
     padding: var(--size);
     background-color: #161616;
@@ -30,9 +29,8 @@
     opacity: 0.8;
   }
   div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    place-items: center;
     gap: calc(var(--size) / 4);
   }
   label {

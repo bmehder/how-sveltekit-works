@@ -40,4 +40,9 @@
     text-transform: uppercase;
     letter-spacing: 2px;
   }
+
+  a {
+    text-underline-offset: calc(var(--size) / 2);
+    text-decoration-thickness: 0.125rem;
+  }
 </style>
