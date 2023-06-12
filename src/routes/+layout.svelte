@@ -1,5 +1,6 @@
 <!-- This is the layout file that is used by all the routes. -->
 <script>
+  import { page } from '$app/stores';
   import '$lib/app.css'
   import menuItems from '$lib/Header/menuItems'
   import Header from '$lib/Header/Header.svelte'
@@ -21,6 +22,10 @@
     <Header logo="SvelteKit Demo" {menuItems} />
   {:else}
     <MobileHeader logo="SvelteKit" {menuItems} />
+  {/if}
+
+  {#if $page.route.id === '/'}
+    <img src="https://picsum.photos/1200/600" alt="placeholder">
   {/if}
 
   <main class="flow">
