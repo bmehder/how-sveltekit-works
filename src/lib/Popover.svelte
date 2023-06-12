@@ -12,6 +12,11 @@
 </div>
 
 <style>
+	:global(body:has(:popover-open)) {
+		position: fixed;
+		inset: 0;
+	}
+	
 	div:popover-open {
 		width: clamp(16em, 32em, 80%);
 		display: grid;
