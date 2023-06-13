@@ -21,13 +21,13 @@
     <textarea name="message" id="message" cols="30" rows="10" required></textarea>
   </div>
   <div>
-    <input class="bg-accent" type="submit" value="Submit Message" />
+    <button type="submit">Submit Message</button>
   </div>
 </form>
 
 <style>
   form {
-    max-width: 48rem;
+    width: min(100%, 48rem);
     display: grid;
     gap: var(--size);
   }
@@ -39,18 +39,5 @@
 
   input, textarea {
     padding: calc(var(--size) / 2);
-    font-family: inherit;
-    font-size: inherit;
-  }
-
-  input[type="submit"] {
-    font-size: var(--size);
-    cursor: pointer;
-    border: none;
-
-    &:hover {
-      background-color: transparent;
-      outline: 4px solid var(--accent);
-    }
   }
 </style>

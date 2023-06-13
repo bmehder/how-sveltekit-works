@@ -36,10 +36,10 @@
     position: fixed;
     right: 2rem;
     bottom: 1rem;
-    color: white;
-    font-size: 1.5rem;
+    color: var(--light, white);
+    font-size: var(--size);
     font-weight: bold;
-    border: 0.25rem solid white;
+    border: 0.25rem solid var(--light, white);
     border-radius: 50%;
     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.24);
     transition: scale 150ms ease;

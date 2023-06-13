@@ -2,7 +2,7 @@
   color-scheme: dark light;
   --size: 1.5rem;
   --max-width: 76em;
-  --width:  min(100% - var(--size), 80%);
+  --width: min(100% - var(--size), 80%);
   --dark: #323232;
   --darker: #161616;
   --light: white;
@@ -64,6 +64,11 @@ button, .button {
     text-decoration: none;
     outline: 0.25em solid var(--accent);
   }
+}
+
+input, textarea, button {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 /* Utilities */

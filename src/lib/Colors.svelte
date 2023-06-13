@@ -1,18 +1,20 @@
 <script>
-  import { browser } from '$app/environment';
+  import { browser } from '$app/environment'
 
   export let colors = {}
 
-  const setCustomPropertyOnBody = ([key, val]) => document.body.style.setProperty(key, val)
+  const setCustomProperty = ([key, val], elem) => elem.style.setProperty(key, val)
 
-  $: browser && Object.entries(colors).forEach(setCustomPropertyOnBody)
+  const setColor = color => setCustomProperty(color, document.body)
+
+  $: browser && Object.entries(colors).forEach(setColor)
 </script>
 
 <aside class="auto-grid">
   {#each Object.entries(colors) as [key]}
     <div>
-      <label for="{key}">{key.replace('--', '')}</label>
-      <input type="color" name="{key}" bind:value={colors[key]} />
+      <label for={key}>{key.substring(2)}</label>
+      <input type="color" name={key} bind:value={colors[key]} />
     </div>
   {/each}
 </aside>

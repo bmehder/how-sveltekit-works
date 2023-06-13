@@ -19,7 +19,7 @@
 	}
 	
 	div:popover-open {
-		width: clamp(16em, 32em, 80%);
+		width: min(32em, 80%);
 		display: grid;
 		margin: auto;
     padding: calc(var(--size) * 2);
