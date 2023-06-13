@@ -26,7 +26,7 @@
   {/if}
 
   {#if $page.route.id === '/'}
-    <Hero image="https://picsum.photos/1200/600">
+    <Hero image="/hero.jpg">
       <h2>Welcome to my website!</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </Hero>
@@ -59,10 +59,10 @@
     grid-template-rows: auto 1fr auto;
   }
   main {
-    width: 100%;
+    width: var(--width);
     max-width: var(--max-width);
-    padding-block: calc(var(--size) * 2);
-    padding-inline: calc(var(--size) * 3);
+    padding-block-start: calc(var(--size) * 2);
+    padding-block-end: calc(var(--size) * 3);
     margin-inline: auto;
     line-height: 1.5;
   }

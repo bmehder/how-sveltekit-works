@@ -20,7 +20,7 @@
 </header>
 
 <style>
-  div {
+  .inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

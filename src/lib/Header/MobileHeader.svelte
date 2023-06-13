@@ -21,7 +21,7 @@
   const closeMenu = () => (isOpen = false)
 </script>
 
-<header class="bg-accent">
+<header class="bg-accent" class:isOpen>
   <div class="inner">
     <div class="top">
       <div class="logo">
@@ -78,4 +78,9 @@
   a {
     display: block;
   }
+
+  :global(body:has(.isOpen)) {
+		position: fixed;
+		inset: 0;
+	}
 </style>

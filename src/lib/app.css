@@ -1,7 +1,8 @@
 :root {
   color-scheme: dark light;
-  --max-width: 76em;
   --size: 1.5rem;
+  --max-width: 76em;
+  --width:  min(100% - var(--size), 80%);
   --dark: #323232;
   --darker: #161616;
   --light: white;
@@ -67,10 +68,10 @@ button, .button {
 
 /* Utilities */
 .inner {
+  width: var(--width);
   max-width: var(--max-width);
   margin-inline: auto;
 	padding-block: calc(var(--size) * 2);	
-	padding-inline: calc(var(--size) * 3);	
 }
 
 .auto-grid {

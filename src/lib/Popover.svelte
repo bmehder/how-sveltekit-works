@@ -15,6 +15,7 @@
 	:global(body:has(:popover-open)) {
 		position: fixed;
 		inset: 0;
+    filter: blur(3px);
 	}
 	
 	div:popover-open {
