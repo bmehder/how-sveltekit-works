@@ -68,7 +68,7 @@
   }
 
   a {
-    text-underline-offset: calc(var(--size) / 2);
+    text-underline-offset: var(--half-size);
     text-decoration-thickness: calc(var(--size) / 12);
   }
 </style>

@@ -38,6 +38,6 @@
   }
 
   input, textarea {
-    padding: calc(var(--size) / 2);
+    padding: var(--half-size);
   }
 </style>
