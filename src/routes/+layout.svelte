@@ -42,7 +42,7 @@
 
 <BackToTop color="dodgerblue" />
 
-<!-- <Popover delay="2000">
+<Popover delay="2000">
   <h2>My content</h2>
   <p>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nam dignissimos
@@ -51,7 +51,7 @@
     mollitia deleniti ab facilis? Quam mollitia exercitationem officia, perspiciatis nihil
     iste fugiat eum tenetur nemo debitis magni.
   </p>
-</Popover> -->
+</Popover>
 
 <style>
   .wrapper {

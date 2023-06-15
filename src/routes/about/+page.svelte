@@ -19,7 +19,7 @@
   </div>
 </section>
 
-<section class="full-bleed bg-light flow" style="--background: var(--light)">
+<section class="full-bleed flow">
   <h2>Lorem Ipsum Dolor</h2>
 
   <p>

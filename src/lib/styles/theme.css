@@ -9,8 +9,8 @@
 }
 
 body {
-  background-color: var(--darker);
-  color: var(--light);
+  /* background-color: var(--darker);
+  color: var(--light); */
   font-family: var(--fonts);
 }
 

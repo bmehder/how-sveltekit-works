@@ -9,3 +9,9 @@
 <img src={featured_image} alt={title} />
 
 <div>{@html excerpt}</div>
+
+<style>
+  div :global(* + *) {
+    margin-block-start: var(--size);
+  }
+</style>

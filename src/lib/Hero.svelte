@@ -13,6 +13,7 @@
     padding-block: calc(var(--size) * 10);
     background-position: center;
     background-size: cover;
+    color: var(--light);
     font-size: 1.25rem;
     line-height: 1.5;
   }
