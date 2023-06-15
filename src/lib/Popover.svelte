@@ -22,7 +22,7 @@
 		width: min(32em, 80%);
 		display: grid;
 		margin: auto;
-    padding: calc(var(--size) * 2);
+    padding: var(--double-size);
 		line-height: 1.5;
     border-radius: calc(var(--size) / 3);
 		animation-delay: 400ms;

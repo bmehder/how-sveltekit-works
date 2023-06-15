@@ -1,6 +1,7 @@
 <!-- This is the layout file that is used by all the routes. -->
 <script>
   import '$lib/app.css'
+  import '$lib/theme.css'
   import { page } from '$app/stores'
   import menuItems from '$lib/Header/menuItems'
   import Header from '$lib/Header/Header.svelte'
@@ -41,7 +42,7 @@
 
 <BackToTop color="dodgerblue" />
 
-<Popover delay="2000">
+<!-- <Popover delay="2000">
   <h2>My content</h2>
   <p>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat nam dignissimos
@@ -50,7 +51,7 @@
     mollitia deleniti ab facilis? Quam mollitia exercitationem officia, perspiciatis nihil
     iste fugiat eum tenetur nemo debitis magni.
   </p>
-</Popover>
+</Popover> -->
 
 <style>
   .wrapper {
@@ -61,9 +62,10 @@
   main {
     width: var(--width);
     max-width: var(--max-width);
-    padding-block-start: calc(var(--size) * 2);
-    padding-block-end: calc(var(--size) * 3);
+    padding-block-start: var(--double-size);
+    padding-block-end: var(--triple-size);
     margin-inline: auto;
     line-height: 1.5;
   }
 </style>
+

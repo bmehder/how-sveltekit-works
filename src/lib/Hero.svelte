@@ -19,7 +19,7 @@
   .inner {
     width: min(32em, 80%);
     margin-inline: auto;
-    padding: calc(var(--size) * 2);
+    padding: var(--double-size);
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: var(--size);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);

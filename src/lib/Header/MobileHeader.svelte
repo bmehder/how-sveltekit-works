@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--size);
-    padding-block-start: calc(var(--size) * 2);
+    padding-block-start: var(--double-size);
     font-size: var(--size);
     list-style: none;
   }
