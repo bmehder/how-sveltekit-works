@@ -54,8 +54,8 @@ button {
   gap: var(--size);
 
   @media (width > 48em) {
-    grid-auto-flow: column;
     gap: var(--gap, var(--double-size));
+    grid-auto-flow: column;
   }
 }
 

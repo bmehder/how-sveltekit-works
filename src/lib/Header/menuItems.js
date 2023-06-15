@@ -5,14 +5,18 @@ export default [
   },
   {
     name: 'About',
-    url: '/about'
+    url: '/about',
+    children: [
+      { name: 'History', url: '/about/history' },
+      { name: 'Education', url: '/about/education' },
+    ],
   },
   {
     name: 'Gallery',
-    url: '/gallery'
+    url: '/gallery',
   },
   {
     name: 'Contact',
-    url: '/contact'
-  }
+    url: '/contact',
+  },
 ]

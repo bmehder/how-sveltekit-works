@@ -35,7 +35,7 @@
     aspect-ratio: 1;
     position: fixed;
     right: 2rem;
-    bottom: 1rem;
+    bottom: 2rem;
     color: var(--light, white);
     font-size: var(--size);
     font-weight: bold;

@@ -1,10 +1,3 @@
-<svelte:head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
-</svelte:head>
-
 <script>
   import { slide } from 'svelte/transition'
   import Hamburger from '$lib/icons/Hamburger.svelte'
@@ -20,6 +13,13 @@
   const toggleMenu = () => (isOpen = !isOpen)
   const closeMenu = () => (isOpen = false)
 </script>
+
+<svelte:head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</svelte:head>
 
 <header class="bg-accent" class:isOpen>
   <div class="inner">
@@ -38,8 +38,17 @@
     {#if isOpen}
       <nav transition:slide>
         <ul>
-          {#each menuItems as { name, url }}
-            <li><a on:click={closeMenu} href={url}>{name}</a></li>
+          {#each menuItems as { name, url, children }}
+            <li>
+              <a on:click={closeMenu} href={url}>{name}</a>
+            </li>
+            {#if children}
+              {#each children as { name, url }}
+                <li class="child">
+                  <a on:click={closeMenu} href={url}>{name}</a>
+                </li>
+              {/each}
+            {/if}
           {/each}
         </ul>
       </nav>
@@ -75,12 +84,16 @@
     border-bottom: 2px solid var(--light);
   }
 
+  .child {
+    padding-inline-start: var(--size);
+  }
+
   a {
     display: block;
   }
 
   :global(body:has(.isOpen)) {
-		position: fixed;
-		inset: 0;
-	}
+    position: fixed;
+    inset: 0;
+  }
 </style>

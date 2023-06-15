@@ -1,7 +1,7 @@
 <!-- This is the layout file that is used by all the routes. -->
 <script>
-  import '$lib/app.css'
-  import '$lib/theme.css'
+  import '$lib/styles/app.css'
+  import '$lib/styles/theme.css'
   import { page } from '$app/stores'
   import menuItems from '$lib/Header/menuItems'
   import Header from '$lib/Header/Header.svelte'
