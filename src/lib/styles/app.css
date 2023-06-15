@@ -19,6 +19,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: var(--fonts);
+}
+
 img {
   display: block;
   width: 100%;
@@ -71,7 +75,9 @@ button {
 /* Skins */
 .full-bleed {
   --background: var(--accent);
+  --color: var(--light);
   background-color: var(--background);
+  color: var(--color);
   box-shadow: 0 0 0 100vmax var(--background);
   clip-path: inset(0 -100vmax);
 }

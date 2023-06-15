@@ -8,11 +8,10 @@
   --accent: tomato;
 }
 
-body {
-  /* background-color: var(--darker);
-  color: var(--light); */
-  font-family: var(--fonts);
-}
+/* body {
+  background-color: var(--darker);
+  color: var(--light);
+} */
 
 h2 {
   line-height: 1.25;

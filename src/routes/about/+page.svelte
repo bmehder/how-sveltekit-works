@@ -1,6 +1,6 @@
 <h1>About</h1>
 
-<section>
+<section class="flow">
   <div class="columns">
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores fuga ea
@@ -17,11 +17,26 @@
       illo dolorem. Aspernatur molestiae sapiente fugit tempore cupiditate.
     </p>
   </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit neque obcaecati dolorem. Tempora architecto reprehenderit, error explicabo ullam fugiat officiis illum, ducimus esse dolore qui officia ea? Ea, illo velit voluptates error labore inventore porro? Ea vero maiores laborum illo pariatur cumque fuga, iste vitae, reiciendis eaque minima modi temporibus cum? Quae, nobis error sunt officia nemo ipsam porro suscipit architecto odio maxime vitae quaerat ullam. Ea voluptatum enim vitae numquam labore, tempore inventore aspernatur nostrum itaque similique placeat, dolores aliquid, sequi rerum doloremque expedita? Laudantium quae maxime consequatur tenetur aliquid necessitatibus, praesentium error reprehenderit ipsa eos hic eaque inventore!</p>
 </section>
 
-<section class="full-bleed flow">
+<section class="flow full-bleed" style="--background: dodgerblue;">
   <h2>Lorem Ipsum Dolor</h2>
 
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus eligendi
+    neque modi minus error iure commodi asperiores voluptatum, natus fuga voluptate.
+    Magnam dolorem dolores magni quam! Similique at consectetur, animi quaerat corporis
+    eligendi incidunt aliquam aspernatur deserunt eos, nostrum inventore aut magnam
+    officia pariatur voluptates omnis fugit sit sed!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus eligendi
+    neque modi minus error iure commodi asperiores voluptatum, natus fuga voluptate.
+    Magnam dolorem dolores magni quam! Similique at consectetur, animi quaerat corporis
+    eligendi incidunt aliquam aspernatur deserunt eos, nostrum inventore aut magnam
+    officia pariatur voluptates omnis fugit sit sed!
+  </p>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus eligendi
     neque modi minus error iure commodi asperiores voluptatum, natus fuga voluptate.
@@ -78,7 +93,7 @@
   </p>
 </section>
 
-<section class="full-bleed flow">
+<section class="flow full-bleed">
   <h2>Lorem Ipsum Dolor</h2>
   <div class="columns">
     <p>
@@ -162,5 +177,15 @@
 
 <section class="flow">
   <h2>Lorem Ipsum Dolor</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quod est adipisci voluptates asperiores corrupti impedit, deserunt, libero voluptatum molestias fuga et assumenda ad unde beatae earum perferendis rem minus enim cupiditate saepe in? Provident, et. Quos, est! Fugit commodi omnis non. Et, eos doloribus officia doloremque adipisci, nesciunt nemo suscipit vero architecto hic illo soluta pariatur aspernatur incidunt odio velit, sit impedit. Ipsum corrupti modi quia numquam fugit, sunt optio saepe nulla enim. Eum consequatur fugiat aliquid qui quasi eos ipsum minima quisquam eaque culpa distinctio cumque fugit nulla quidem, suscipit exercitationem explicabo minus. In corporis quam autem quidem!</p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quod est adipisci
+    voluptates asperiores corrupti impedit, deserunt, libero voluptatum molestias fuga et
+    assumenda ad unde beatae earum perferendis rem minus enim cupiditate saepe in?
+    Provident, et. Quos, est! Fugit commodi omnis non. Et, eos doloribus officia
+    doloremque adipisci, nesciunt nemo suscipit vero architecto hic illo soluta pariatur
+    aspernatur incidunt odio velit, sit impedit. Ipsum corrupti modi quia numquam fugit,
+    sunt optio saepe nulla enim. Eum consequatur fugiat aliquid qui quasi eos ipsum minima
+    quisquam eaque culpa distinctio cumque fugit nulla quidem, suscipit exercitationem
+    explicabo minus. In corporis quam autem quidem!
+  </p>
 </section>

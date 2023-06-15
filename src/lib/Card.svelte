@@ -23,6 +23,10 @@
 <style>
 	li {
 		list-style: none;
+
+		@media (prefers-color-scheme: light) {
+			border: 1px solid lightgray;
+		}
 	}
 	
 	.content {
