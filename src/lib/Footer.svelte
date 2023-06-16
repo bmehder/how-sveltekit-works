@@ -26,7 +26,7 @@
   .inner {
     display: flex;
     flex-direction: column;
-    gap: calc(var(--size) * 1.5);
+    gap: var(--double-size);
     text-align: center;
   }
   .inner > * {
