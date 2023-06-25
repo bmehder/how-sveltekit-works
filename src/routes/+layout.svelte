@@ -3,6 +3,7 @@
   import '$lib/styles/app.css'
   import '$lib/styles/theme.css'
   import { page } from '$app/stores'
+  import PageTransition from '$lib/PageTransition.svelte'
   import menuItems from '$lib/Header/menuItems'
   import Header from '$lib/Header/Header.svelte'
   import MobileHeader from '$lib/Header/MobileHeader.svelte'
@@ -13,7 +14,8 @@
 
   const mobileThreshold = 768
 
-  // Component State
+  export let data
+
   let innerWidth = 769
 </script>
 
@@ -27,14 +29,22 @@
   {/if}
 
   {#if $page.route.id === '/'}
-    <Hero image="/hero.jpg">
-      <h2>Welcome to my website!</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </Hero>
+    <PageTransition key={data.url}>
+      <Hero image="/hero.jpg">
+        <h2>Welcome to my website!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </Hero>
+    </PageTransition>
   {/if}
 
-  <main class="flow">
+  <!-- <main class="flow">
     <slot />
+  </main> -->
+
+  <main class="flow">
+    <PageTransition key={data.url}>
+      <slot />
+    </PageTransition>
   </main>
 
   <Footer text="Anna Pollard." />
@@ -68,4 +78,3 @@
     line-height: 1.5;
   }
 </style>
-
